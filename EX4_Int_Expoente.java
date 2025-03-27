@@ -1,3 +1,4 @@
+
 package EX11;
 
 import java.util.Scanner;
@@ -6,6 +7,7 @@ import java.util.Scanner;
  *
  * @author ADM
  */
+
 public class EX4_Int_Expoente {
 
     public static double n4(int n1, int n2) {
@@ -15,19 +17,35 @@ public class EX4_Int_Expoente {
         int n3 = n2 - 2;
 
         int r2 = 0;
+
+        if (n3 <= -2) {
         
-        if (n3 <= 0) {
+         System.out.println("O resultado eh 1" );
+         //break;
+
+         }
+ 
+            else if (n3 <= -1) {
         
-           System.out.println("O resultado eh " + r1); 
-            
-        }    
-            
+         System.out.println("O resultado eh " + n1 );
+         
+        }
+        
+       else if (n3 <= 0) {
+
+            System.out.println("O resultado eh " + r1);
+
+        }
+
+
+
+
         for (int i = 1; i <= n3; i++) {
 
             r2 = n1 * r1;
 
-             System.out.println("O resultado eh " + r2);
-            
+            System.out.println("O resultado eh " + r2);
+
         }
 
         return r2;
