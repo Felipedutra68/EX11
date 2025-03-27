@@ -16,7 +16,7 @@ public class EX2_Tru {
             System.out.println("O numero eh par " + f1);
         } else {
 
-            String f1 = "True";
+            String f1 = "False";
             System.out.println("O numero eh par " + f1);
         }
 
